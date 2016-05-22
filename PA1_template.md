@@ -105,7 +105,7 @@ Now that the missing data has been replaced by numerical values, we compute a ne
 
 ```r
 newstepsbyday <- aggregate(steps ~ date, activity, sum)
-hist(newstepsbyday$steps, breaks = 10)
+hist(newstepsbyday$steps, breaks = 10, xlab = "Steps Per Day", main = "Histogram of Steps Per Day")
 abline(v = mean(newstepsbyday$steps), col = "blue", lwd = 3)
 ```
 
